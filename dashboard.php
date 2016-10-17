@@ -62,12 +62,12 @@ try
 	
 	?>
 <script>
-function delete_order(id){
+function delete_order(order_id){
 	alert(1);
  var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
  $.ajax({
-                    url: '/delete.php?id='+ id+'&access_token='+access_token+'&shop='+shop,
+                    url: '/delete.php?order_id='+ order_id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
                    alert(1);
                     }
