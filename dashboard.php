@@ -63,16 +63,15 @@ try
 	?>
 <script>
 function delete(id){
+	alert(1);
  var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
-
-
-                $.ajax({
+ /*$.ajax({
                     url: '/delete.php?id='+ id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
                    alert(1);
                     }
-                });
+                });*/
 }
 </script>
 
