@@ -63,13 +63,13 @@ try
 	?>
 <script>
 function delete_order(order_id){
-	alert(1);
+	alert(2);
  var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
  $.ajax({
                     url: '/order-delete.php?order_id='+ order_id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
-                   alert(data.html());
+                   alert(data);
                     }
                 });
 }
