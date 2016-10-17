@@ -1,6 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+require __DIR__.'/conf.php'; //Configuration
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
      echo $access_token=$_REQUEST['access_token'];
