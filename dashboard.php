@@ -68,7 +68,7 @@ function delete (id){
 
 
                 $.ajax({
-                    url: '/delete.php?pid='+ pid+'&access_token='+access_token+'&shop='+shop,
+                    url: '/delete.php?id='+ id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
                    alert(1);
                     }
