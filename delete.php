@@ -2,13 +2,13 @@
 
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
-     $access_token=$_REQUEST['access_token'];
+     echo $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
-     $id=$_REQUEST['id'];
+     echo $id=$_REQUEST['id'];
 ?>
 
 <?php
-try
+/*try
 	{
 		# Making an API request can throw an exception
 		
@@ -24,5 +24,5 @@ catch (shopify\ApiException $e)
 		echo $e;
 		print_r($e->getRequest());
 		print_r($e->getResponse());
-	}
+	}*/
   ?>
