@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('GET /admin/orders.json', array('status'=>'any'));
+	     $orders = $shopify('GET /admin/orders.json', array('status'=>'open'));
 		 $count=0;
 		foreach($orders as $singleorder)
 		{
@@ -30,17 +30,9 @@ try
 
 <!-- HTML Content for Product  START      -->
 
-<div class="product-card-clearfix">
+<div class="feed-product-main-clearfix">
 
 	<div class="product-card-container">
-
-          <div class="ribbon ribbon-<?php echo $id; ?>"><span>SHARED</span></div>
-
-      		<div class="product-card-image-container>
-            <!-- Opacity Layer -->
-             
-            <!-- Product Details Layer -->
-              <div class="product-card-image-container-content-hover product-details">
                   <div class="product-details-container">
                       <div class="product-icon-container" style="margin-bottom: 15px;">
                          <span class="product-icon-clearfix">
@@ -60,15 +52,7 @@ try
               </div>
           </div>
 
-          <div id="<?php echo $id; ?>"  class="share-button-container?>" >
-
-                
-
-	         </div>
-
-        </div>
-
-    </div>
+         
 
 
 
