@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('GET /admin/orders.json', array('status'=>'open'));
+	     $orders = $shopify('GET /admin/orders.json', array('status'=>'cancelled'));
 		 $count=0;
 		foreach($orders as $singleorder)
 		{
