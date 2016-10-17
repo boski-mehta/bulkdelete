@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('GET /admin/orders/.json', array('status'=>'open'));
+	     $orders = $shopify('GET /admin/orders/.json', array('status'=>'any'));
 		 $count=0;
 		foreach($orders as $singleorder)
 		{
@@ -34,7 +34,7 @@ try
 
 	<div class="product-card-container">
 
-          <div class="ribbon ribbon-<?php echo $p_id1; ?>"><span>SHARED</span></div>
+          <div class="ribbon ribbon-<?php echo $id; ?>"><span>SHARED</span></div>
 
       		<div class="product-card-image-container>
             <!-- Opacity Layer -->
@@ -60,7 +60,7 @@ try
               </div>
           </div>
 
-          <div id="<?php echo $p_id1; ?>"  class="share-button-container?>" >
+          <div id="<?php echo $id; ?>"  class="share-button-container?>" >
 
                 
 
