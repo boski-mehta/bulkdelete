@@ -36,7 +36,7 @@ try
         <span class="product-title-text"><?php echo $id; ?></span>
 		<span class="product-title-text"><?php echo $title; ?></span>
 		<span class="product-title-text"><?php echo $order_number; ?></span>
-		<span class="product-title-text delete" onclick="delete(<?php echo $id; ?>);">Delete</span>
+		<span class="product-title-text delete" onclick="delete_order(<?php echo $id; ?>);">Delete</span>
     </div>
      
 
@@ -62,16 +62,16 @@ try
 	
 	?>
 <script>
-function delete(id){
+function delete_order(id){
 	alert(1);
  var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
- /*$.ajax({
+ $.ajax({
                     url: '/delete.php?id='+ id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
                    alert(1);
                     }
-                });*/
+                });
 }
 </script>
 
