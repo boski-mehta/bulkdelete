@@ -8,7 +8,7 @@
 ?>
 
 <?php
-/*try
+try
 	{
 		# Making an API request can throw an exception
 		
@@ -24,5 +24,5 @@ catch (shopify\ApiException $e)
 		echo $e;
 		print_r($e->getRequest());
 		print_r($e->getResponse());
-	}*/
+	}
   ?>
