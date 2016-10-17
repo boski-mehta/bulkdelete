@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('GET /admin/orders/.json', array('status'=>'any'));
+	     $orders = $shopify('GET /admin/orders.json', array('status'=>'any'));
 		 $count=0;
 		foreach($orders as $singleorder)
 		{
