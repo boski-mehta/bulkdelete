@@ -33,34 +33,12 @@ try
 <div class="feed-product-main-clearfix">
 
 	<div class="product-card-container">
-                  <div class="product-details-container">
-                      <div class="product-icon-container" style="margin-bottom: 15px;">
-                         <span class="product-icon-clearfix">
-
-                         </span>
-                      </div>
-
-                      <div style="margin-top: 15px;">
-					  <span class="product-title-text"><?php echo $id; ?></span>
-                        <span class="product-title-text"><?php echo $title; ?></span>
-						<span class="product-title-text"><?php echo $order_number; ?></span>
-                      </div>
-
-                      
-                  </div>
-                  
-              </div>
-          </div>
-
-         
-
-
-
-
-
-
-
-<!-- HTML Content for Product END    -->
+        <span class="product-title-text"><?php echo $id; ?></span>
+		<span class="product-title-text"><?php echo $title; ?></span>
+		<span class="product-title-text"><?php echo $order_number; ?></span>
+		<span class="product-title-text delete">Delete</span>
+    </div>
+     
 
 	<?php
 	$count++;
