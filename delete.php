@@ -4,7 +4,7 @@
      use phpish\shopify;
      echo $access_token=$_REQUEST['access_token'];
      $shopify = shopify\client($_REQUEST['shop'], SHOPIFY_APP_API_KEY, $access_token );
-     echo $id=$_REQUEST['id'];
+     echo $oid=$_REQUEST['order_id'];
 ?>
 
 <?php
@@ -14,7 +14,7 @@
 		
 		
 
-	     $orders = $shopify('DELETE  /admin/orders'.$id.'.json', array('status'=>'open'));
+	     $orders = $shopify('DELETE  /admin/orders'.$oid.'.json', array('status'=>'open'));
 		     print_r($orders);
 
 }
