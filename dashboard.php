@@ -62,7 +62,7 @@ try
 	
 	?>
 <script>
-function delete (id){
+function delete(id){
  var access_token='<?php echo $access_token ?>';
 	       var shop='<?php echo $_REQUEST['shop'] ?>';
 
