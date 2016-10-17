@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('DELETE  /admin/orders.'.$id.'json', array('status'=>'open'));
+	     $orders = $shopify('DELETE  /admin/orders'.$id.'.json', array('status'=>'open'));
 		     print_r($orders);
 
 }
