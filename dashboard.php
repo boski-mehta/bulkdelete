@@ -14,7 +14,7 @@ try
 		
 		
 
-	     $orders = $shopify('GET /admin/orders/.json', array('published_status'=>'published'));
+	     $orders = $shopify('GET /admin/orders/.json', array('status'=>'open'));
 		 $count=0;
 		foreach($orders as $singleorder)
 		{
