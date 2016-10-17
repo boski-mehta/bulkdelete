@@ -1,5 +1,5 @@
 <?php
-
+require __DIR__.'/conf.php'; //Configuration
      require __DIR__.'/vendor/autoload.php';
      use phpish\shopify;
      $access_token=$_REQUEST['access_token'];
@@ -69,7 +69,7 @@ function delete_order(order_id){
  $.ajax({
                     url: '/order-delete.php?order_id='+ order_id+'&access_token='+access_token+'&shop='+shop,
                     success: function(data){
-                   alert(1);
+                   alert(data.html());
                     }
                 });
 }
